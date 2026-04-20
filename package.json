@@ -1,0 +1,33 @@
+{
+  "name": "live-lyrics",
+  "version": "1.0.0",
+  "description": "Live Lyrics App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-react": "cd client && npm run build",
+    "dist": "npm run build-react && electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.live.lyrics",
+    "productName": "Live Lyrics",
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "express": "^5.2.1",
+    "midi": "^2.0.0",
+    "open": "^11.0.0",
+    "ws": "^8.20.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^26.8.1"
+  }
+}
