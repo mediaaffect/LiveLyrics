@@ -1,5 +1,13 @@
+# dependencies
 node_modules/
+client/node_modules/
+
+# builds
 dist/
 build/
-.env
+client/dist/
+client/build/
+
+# system
 .DS_Store
+.env
